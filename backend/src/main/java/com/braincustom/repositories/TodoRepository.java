@@ -15,4 +15,8 @@ public interface TodoRepository extends JpaRepository<Todo, Integer> {
 	@Query("SELECT obj FROM Todo obj WHERE obj.finalizado = false ORDER BY obj.dataParaFinalizar")
 	List<Todo> findAllOpen();
 
+	//método que vai listar todos os Todos na base de dados que estão fechados
+		@Query("SELECT obj FROM Todo obj WHERE obj.finalizado = true ORDER BY obj.dataParaFinalizar")
+	List<Todo> findAllClose();
+
 }
