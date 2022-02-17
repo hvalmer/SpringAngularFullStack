@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.braincustom</groupId>
-	<artifactId>SpringAngular11</artifactId>
+	<artifactId>SpringAngular</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringAngular11</name>
+	<name>SpringAngular</name>
 	<description>Spring Boot com Angular 11</description>
 	<properties>
 		<java.version>11</java.version>

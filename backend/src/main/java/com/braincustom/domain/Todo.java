@@ -97,6 +97,4 @@ public class Todo implements Serializable {
 			return false;
 		return true;
 	}
-	
-	
 }
