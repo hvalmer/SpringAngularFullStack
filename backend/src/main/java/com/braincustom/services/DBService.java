@@ -23,7 +23,13 @@ public class DBService {
 		// instância do Todo sempre que a aplicação iniciar
 		Todo t1 = new Todo(null, "Estudar", "Estudar Spring Boot 2 e Angular 11",
 				LocalDateTime.parse("26/03/2022 10:46", formatter), false);
+		Todo t2 = new Todo(null, "Ler", "Ler livro de desenvolvimento pessoal",
+				LocalDateTime.parse("24/04/2022 08:50", formatter), true);
+		Todo t3 = new Todo(null, "Exercícios", "Praticar atividade física",
+				LocalDateTime.parse("26/03/2022 10:46", formatter), false);
+		Todo t4 = new Todo(null, "Meditar", "Praticar meditação guiada",
+				LocalDateTime.parse("26/03/2022 10:46", formatter), false);
 
-		todoRepository.saveAll(Arrays.asList(t1));
+		todoRepository.saveAll(Arrays.asList(t1, t2, t3, t4));
 	}
 }
