@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +19,9 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.braincustom.domain.Todo;
 import com.braincustom.services.TodoService;
 
+/* "*"a api no endpoint "/todos", recebe requisições de múltiplas fontes. 
+ * Uma vez que se está se criando um frontend roda na porta 4200*/
+@CrossOrigin("*")
 @RestController
 @RequestMapping(value="/todos")
 public class TodoResource {
